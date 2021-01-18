@@ -1,101 +1,101 @@
 exports.wait = () => {
-	return`*「 WAIT 」 SEDANG PROSES*`
+	return`*「 ESPERE 」 PROCESSAMENTO*`
 }
 
 exports.succes = () => {
-	return`*「 SUCCES 」*`
+	return`*「 SUCESSO 」*`
 }
 
 exports.lvlon = () => {
-	return`*「 ENABLE 」 LEVELING*`
+	return`*「 ATIVAR 」 NIVELAMENTO*`
 }
 
 exports.lvloff = () => {
-	return`*「 DISABLE 」 LEVELING*`
+	return`*「 DESATIVAR 」 NIVELAMENTO*`
 }
 
 exports.lvlnul = () => {
-	return`*LEVELMU MASIH KOSONG*`
+	return`*SEU NÍVEL AINDA ESTÁ VAZIO*`
 }
 
 exports.lvlnoon = () => {
-	return`*LEVEL DI GRUB BELUM DI AKTIFKAN*`
+	return`*O NÍVEL DO GRUB NÃO FOI ATIVADO*`
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*cara daftar ${prefix}daftar nama|umur* \n*contoh ${prefix}daftar affis|17*`
+	return`*「 AINDA NÃO ESTÁ REGISTADO 」*\n\n*como registrar ${prefix}daftar nome|idade*\n*exemplo ${prefix}daftar seth|6*`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH DAFTAR 」*\n\n*kamu sudah terdaftar di database bot*`
+	return`*「 JÁ ​​REGISTRADO 」*\n\n*Você já está registrado no banco de dados do bot*`
 }
 
 exports.stikga = () => {
-	return`*yah gagal coba ulangi beberapa saat lagi*`
+	return`*sim, falhou tente repetir*`
 }
 
 exports.linkga = () => {
-	return`*maaf link tidak valid*`
+	return`*desculpe link inválido*`
 }
 
 exports.groupo = () => {
-	return`*「GROUP ONLY」*`
+	return`*「SÓ GRUPO」*`
 }
 
 exports.ownerb = () => {
-	return`*「OWNER BOT ONLY」*`
+	return`*「 PROPRIETÁRIO DO BOT APENAS 」*`
 }
 
 exports.ownerg = () => {
-	return`*「OWNER GROUP ONLY」*`
+	return`*「 SOMENTE PROPRIETÁRIOS DO GRUPO 」*`
 }
 
 exports.admin = () => {
-	return`*「ADMIN GROUP ONLY」*`
+	return`*「 SOMENTE GRUPO DE ADMINISTRAÇÃO 」*`
 }
 
 exports.badmin = () => {
-	return`*「BOT HARUS JADI ADMIN」*`
+	return`*「 O BOT DEVE SER ADMINISTRADOR 」*`
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW GAK AKTIF*`
+	return`*NSFW FOI ATIVO*`
 }
 
 exports.bug = () => {
-	return`*Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi*`
+	return`*Problemas foram relatados ao proprietário do BOT, relatórios falsos não serão respondidos*`
 }
 
 exports.wrongf = () => {
-	return`*format salah/text kosong*`
+	return`*Formato incorreto/texto em branco*`
 }
 
 exports.clears = () => {
-	return`*clear all Success*`
+	return`*limpado tudo com sucesso*`
 }
 
 exports.pc = () => {
-	return`*「 REGISTRASI 」*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+	return`*「 REGISTRO 」 *\n\npara saber se você se registrou, verifique a mensagem que enviei \n\nNOTA:\n*se você não recebeu uma mensagem.  significa que você não salvou o número do bot*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting:v`
+	return`*「 DADOS DO PAÍS 」*\n\nvocê já está registrado com os dados\n\n┏━⊱nome \n┗⊱ ${namaUser}\n┏━⊱número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱ idade \ n┗⊱ ${umurUser}\n┏━⊱ tempo de registro\n┗⊱ ${time}\n\n┏━❉ *N * ❉━\n┣⊱ ${serialUser}\n┗⊱NOTA: não se esqueça deste número porque é importante: v`
 }
 
 exports.cmdnf = (prefix, command) => {
-	return`command *${prefix}${command}* tidak di temukan\coba tulis *${prefix}menu*`
+	return`comando *${prefix}${command}* não encontrado\tente escrever *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-	return`*maaf tapi ${pushname} bukan owner script*`
+	return`*Desculpe, mas ${pushname} você não é dono*`
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${aha}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Desculpa ${pushname} o nível de não é suficiente*\n\n*┏⊱ seu nível : ${getLevelingLevel(sender)}*\n*┣⊱tipo de comando : ${command}*\n*┗⊱requisito de nível : ${aha}*\n\n_NOTA : CHAT/SEMPRE LIGADO PARA OBTER XP_`
 }
 
 exports.reglevelahb = (command, pushname, getLevelingLevel, sender, ahb) => {
-	return`*Maaf ${pushname} level mu belum mencukupi*\n\n*┏⊱level mu : ${getLevelingLevel(sender)}*\n*┣⊱jenis command : ${command}*\n*┗⊱syarat level : ${ahb}*\n\n_NOTE : CHAT/SELALU ON UNTUK MENDAPATKAN XP_`
+	return`*Desculpa ${pushname} seu nível não é suficiente*\n\n*┏⊱seu nível : ${getLevelingLevel(sender)}*\n*┣tipo de comando de comando : ${command}*\n* nível condicional : ${ahb}*\n\n_NOTA : CHAT/SEMPRE LIGADO PARA OBTER XP_`
 }
 
 exports.reglevelahc = (command, pushname, getLevelingLevel, sender, ahc) => {
