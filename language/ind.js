@@ -39,7 +39,7 @@ exports.linkga = () => {
 }
 
 exports.groupo = () => {
-	return`*「SÓ GRUPO」*`
+	return`*「 SÓ EM GRUPO 」*`
 }
 
 exports.ownerb = () => {
@@ -59,7 +59,7 @@ exports.badmin = () => {
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW FOI ATIVO*`
+	return`*NSFW DESATIVADO*`
 }
 
 exports.bug = () => {
