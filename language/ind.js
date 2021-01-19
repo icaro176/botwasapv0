@@ -7,11 +7,11 @@ exports.succes = () => {
 }
 
 exports.lvlon = () => {
-	return`*「 ATIVAR 」 NIVELAMENTO*`
+	return`*「 ATIVAR 」 NIVEL*`
 }
 
 exports.lvloff = () => {
-	return`*「 DESATIVAR 」 NIVELAMENTO*`
+	return`*「 DESATIVAR 」 NIVEL*`
 }
 
 exports.lvlnul = () => {
@@ -19,7 +19,7 @@ exports.lvlnul = () => {
 }
 
 exports.lvlnoon = () => {
-	return`*O NÍVEL DO GRUB NÃO FOI ATIVADO*`
+	return`*O NÍVEL DO GRUPO NÃO FOI ATIVADO*`
 }
 
 exports.noregis = () => {
@@ -51,7 +51,7 @@ exports.ownerg = () => {
 }
 
 exports.admin = () => {
-	return`*「 SOMENTE GRUPO DE ADMINISTRAÇÃO 」*`
+	return`*「 SOMENTE ADM PODE USAR 」*`
 }
 
 exports.badmin = () => {
@@ -59,7 +59,7 @@ exports.badmin = () => {
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW DESATIVADO*`
+	return`*NSFW NÃO FOI ATIVADO*`
 }
 
 exports.bug = () => {
@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DADOS DO PAÍS 」*\n\nvocê já está registrado com os dados\n\n┏━⊱nome \n┗⊱ ${namaUser}\n┏━⊱número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱ idade \ n┗⊱ ${umurUser}\n┏━⊱ tempo de registro\n┗⊱ ${time}\n\n┏━❉ *N * ❉━\n┣⊱ ${serialUser}\n┗⊱NOTA: não se esqueça deste número porque é importante: v`
+	return`*「 DADOS 」*\n\nvocê já está registrado com os dados\n\n┏━⊱nome \n┗⊱ ${namaUser}\n┏━⊱número\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱ idade \ n┗⊱ ${umurUser}\n┏━⊱ tempo de registro\n┗⊱ ${time}\n\n┏━❉ *N * ❉━\n┣⊱ ${serialUser}\n┗⊱NOTA: não se esqueça deste número porque é importante:v`
 }
 
 exports.cmdnf = (prefix, command) => {
