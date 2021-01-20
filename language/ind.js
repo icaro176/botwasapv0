@@ -7,23 +7,23 @@ exports.succes = () => {
 }
 
 exports.lvlon = () => {
-	return`*「 ATIVAR 」 NIVEL*`
+	return`*「 NIVEL 」 ATIVADO*`
 }
 
 exports.lvloff = () => {
-	return`*「 DESATIVAR 」 NIVEL*`
+	return`*「 NIVEL 」 DESATIVADO*`
 }
 
 exports.lvlnul = () => {
-	return`*SEU NÍVEL AINDA ESTÁ VAZIO*`
+	return`*NIVEL 1 AINDA KSKSKSK*`
 }
 
 exports.lvlnoon = () => {
-	return`*O NÍVEL DO GRUPO NÃO FOI ATIVADO*`
+	return`*PEÇA PRO ADMER ATIVAR O NIVEL*`
 }
 
 exports.noregis = () => {
-	return`*「 AINDA NÃO ESTÁ REGISTADO 」*\n\n*como registrar ${prefix}daftar nome|idade*\n*exemplo ${prefix}daftar seth|6*`
+	return`*「 VOCÊ AINDA NÃO ESTÁ REGISTRADO 」*\n\n*como registrar ${prefix}daftar nome|idade*\n*exemplo ${prefix}daftar seth|6*`
 }
 
 exports.rediregis = () => {
@@ -43,23 +43,23 @@ exports.groupo = () => {
 }
 
 exports.ownerb = () => {
-	return`*「 PROPRIETÁRIO DO BOT APENAS 」*`
+	return`*「 ESTE COMANDO SÓ PODE SER USADO PELO PROPRIETÁRIO DO BOT 」*`
 }
 
 exports.ownerg = () => {
-	return`*「 SOMENTE PROPRIETÁRIOS DO GRUPO 」*`
+	return`*「 ESTE COMANDO SÓ PODE SER USARO PELO PROPRIETÁRIO DO GRUPO 」*`
 }
 
 exports.admin = () => {
-	return`*「 SOMENTE ADM PODE USAR 」*`
+	return`*「 SIFUDEKKKKK MEMBRO COMUM QUERENDO USAR COMANDO DE ADMER 」*`
 }
 
 exports.badmin = () => {
-	return`*「 O BOT DEVE SER ADMINISTRADOR 」*`
+	return`*「 ME DA ADM QUE EU ACEITO O COMANDO 👉👈 」*`
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW NÃO FOI ATIVADO*`
+	return`*NSFW ESTÁ DESATIVADO*`
 }
 
 exports.bug = () => {
@@ -87,11 +87,11 @@ exports.cmdnf = (prefix, command) => {
 }
 
 exports.owneresce = (pushname) => {
-	return`*Desculpe, mas ${pushname} você não é dono*`
+	return`*Desculpe, mas ${pushname} você não é dono😝*`
 }
 
 exports.reglevelaha = (command, pushname, getLevelingLevel, sender, aha) => {
-	return`*Desculpa ${pushname} o nível de não é suficiente*\n\n*┏⊱ seu nível : ${getLevelingLevel(sender)}*\n*┣⊱tipo de comando : ${command}*\n*┗⊱requisito de nível : ${aha}*\n\n_NOTA : CHAT/SEMPRE LIGADO PARA OBTER XP_`
+	return`*Desculpa ${pushname} seu nível não é suficiente*\n\n*┏⊱ seu nível : ${getLevelingLevel(sender)}*\n*┣⊱tipo de comando : ${command}*\n*┗⊱requisito de nível : ${aha}*\n\n_NOTA : CHAT/SEMPRE LIGADO PARA OBTER XP_`
 }
 
 exports.reglevelahb = (command, pushname, getLevelingLevel, sender, ahb) => {
