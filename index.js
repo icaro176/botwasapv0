@@ -189,7 +189,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\seja bem-vindo ao grupo *${mdata.subject}* LEIA AS REGRAS DO GRUPO`
+				teks = `Olá @${num.split('@')[0]}\ seja bem-vindo ao grupo *${mdata.subject}* LEIA AS REGRAS DO GRUPO`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -199,7 +199,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `finalmente a carga do grupo é reduzida -𝟭, tchau 🥳 @${num.split('@')[0]} huehuehue²`
+				teks = `TCHAU @${num.split('@')[0]} já foi tardeksjdjd`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -351,7 +351,7 @@ client.on('group-participants-update', async (anu) => {
           case 'speed':
           case 'ping':
           if (!isRegistered) return reply(ind.noregis())
-            await client.sendMessage(from, `Pong!!!!\nSpeed: ${processTime(time, moment())} _Second_`)
+            await client.sendMessage(from, `Ping!!!!\nVelocidade: ${processTime(time, moment())} _Segundos_`)
             break
                case 'help': 
 				case 'menu':
@@ -419,12 +419,12 @@ client.on('group-participants-update', async (anu) => {
 					var quote = gh.split("|")[0];
 					var wm = gh.split("|")[1];
 					var bg = gh.split("|")[2];
-					const pref = `Uso: \n${prefix}quotemaker teks|marca d'água|tema\n\nEx :\n${prefix}quotemaker aqui está um exemplo|bicit|random`
+					const pref = `Uso: \n${prefix}quotemaker texto|marca d'água|tema\n\nEx :\n${prefix}quotemaker aqui está um exemplo|seth|random`
 					if (args.length < 1) return reply(pref)
 					reply(ind.wait())
 					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=${bg}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'está aí', quoted: mek})
 					break
                  case 'phlogo':
                  if (!isRegistered) return reply(ind.noregis())
@@ -465,7 +465,7 @@ client.on('group-participants-update', async (anu) => {
                    if (!isNsfw) return reply(ind.nsfwoff())
 				   anu = await fetchJson(`https://arugaz.herokuapp.com/api/waifu`)
 				   buf = await getBuffer(anu.image)
-				   texs = ` *nome de anime* : ${anu.name} \n*descrição* : ${anu.desc} \n*fonte* : ${anu.source}`
+				   texs = `*nome de anime* : ${anu.name} \n*descrição* : ${anu.desc} \n*fonte* : ${anu.source}`
 				   client.sendMessage(from, buf, image, { quoted: mek, caption: `${texs}` })
 				break
 				case 'anime':
